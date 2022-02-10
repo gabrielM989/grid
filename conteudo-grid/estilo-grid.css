@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    font-family: sans-serif;
+}
+
+
+.grid-container{
+
+    min-height: 100vh;
+
+    display: grid;
+   /*  grid-template-rows: 200px 100px 300px 500px ;  *//* Passamos o valor das medidas das linhas, cada valor que adiciona, será uma nova linha*/
+    grid-template-rows: 100px 1fr 300px; 
+    /* O FR serve para adaptar os elementos, a medida em que os espaçamentos precisam */
+   /*  repeat(100/* linhas */ /* , 200px */ /* tamanho das linhas );*/ 
+   grid-template-columns: 1fr 200px; /* define as colunas, quantidade e tamanho */
+
+
+    grid-auto-rows: 200px;/* Criação de linhas automáticas, caso precise criar, alguma linha que não esperávamos */
+    grid-auto-columns: 100px; /* Criação de colunas automáticas, caso precise criar, alguma linha que não esperávamos */
+    grid-auto-flow: 300px; /* define como os elementos que foram criados automaticamente, serão inseridos */
+ 
+   /* row-gap: 10px; */ /* espaçamento entre as linhas */
+   /* column-gap: 35px; */ /* espaçamento entre as colunas */
+    gap: 5px/* row-gap */ 6px /* column-gap */;
+
+    grid-template-areas: 
+        'header header' /* definindo as linhas e as colunas, de jeito mais simplificado */
+        'main aside'
+        'footer footer'
+    
+    ;
+
+}
+
+
+header{
+    background-color: red;
+   /*  grid-row-start:1; */
+/*     grid-row-end: 2; */
+    /* row-start - diz onde ele tem que começar */
+    /* row-end - diz em qual linha deve terminar */
+    /* grid-column-start: 1; */
+  /*   grid-column-end: 3; */
+    /* column-start - diz onde ele tem que começar */
+    /* column-end - diz em qual linha deve terminar */
+    
+
+    grid-area: header; /* precisamos referenciar o que fizemos em grid-template-areas */
+
+}
+main{
+    background-color: lightcoral;
+
+     /* grid-row-start: 2;
+     grid-row-end: 3;
+
+     grid-column-start: 1;
+     grid-column-end: 2; */
+
+     /* grid-row: 2/3; */ /* Jeito menos verboso de fazer */
+     /* grid-column: 1/2; */
+     grid-area: main;
+}
+aside{
+    background-color: blue;
+
+  /*   grid-row-start: 2;
+    grid-row-end: 3;
+
+    grid-column-start: 2;
+    grid-column-end: 3; */
+
+   /*  grid-row: 2/3;  */
+    /* grid-column: 2/3; */
+
+    grid-area: aside;
+}
+
+footer{
+    background-color: aqua;
+
+    /* grid-row-start: 3;
+    grid-row-end: 4; */
+
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+
+    grid-area: footer;
+}

@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*{
+    font-family: sans-serif;
+}
+
+.flexbox /*  flex container */{
+    height: 100vh; /* vh pega a tela inteira de qualquer monitor */
+    background: lightslategray;
+
+    display: flex; /* define que como vai trabalhar o flex box */
+    justify-content: space-around; /* propriedades que manipulam o eixo principal */
+    
+
+    
+
+    flex-wrap: wrap; /* wrap --> faz a quebra de linha, enquanto couber elementos na dela */
+    align-content: space-around; /* praticamente são os mesmos valores do justify */
+    /* align-items: center; */ /* manipula o eixo transversal, assim como o align-content o ALIGN representa o eixo transversal */
+
+    flex-direction: column; /* muda a direção dos elementos */
+
+}
+
+.flexbox-item{
+    width: 325px;
+    height: 150px;
+    border: 1px solid black;
+    background: red;
+}

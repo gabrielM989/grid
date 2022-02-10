@@ -1,0 +1,337 @@
+body{
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 200vh;
+    width: 100wh;
+
+}
+
+.grid1{
+    
+    display: grid;
+    grid-template-rows: 50px 200px;
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas: 
+    'p p' /* definindo as linhas e as colunas, de jeito mais simplificado */
+    'p2 p2'
+;
+  
+    
+}
+.p1{
+    margin: 0;
+    grid-area: p;
+
+    background-color: blue;
+    border: 1px solid black;
+}
+.p2{
+    margin: 0;
+    grid-area: p2;
+
+    background-color: red;
+    border: 2px solid black;
+    
+}
+
+.grid2{
+    display: grid;
+    grid-template-rows: 60px 130px 30px;
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas: 
+    'p p' /* definindo as linhas e as colunas, de jeito mais simplificado */
+    'p2 p2'
+    'p3 p3'
+;
+  
+    
+}
+.p3{
+    margin: 0;
+    grid-area: p;
+
+    background-color: blue;
+    border: 1px solid black;
+}
+.p4{
+    margin: 0;
+    grid-area: p2;
+
+    background-color: red;
+    border: 2px solid black;
+    
+}
+.p5{
+    margin: 0;
+    grid-area: p3;
+
+    background-color: chocolate;
+    border: 2px solid black;
+    
+}
+
+.grid3{
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 1fr 10fr;
+
+    grid-template-areas: 
+    'p p2' /* definindo as linhas e as colunas, de jeito mais simplificado */
+    'p p2'
+    
+;
+  
+    
+}
+.p6{
+    margin: 0;
+    grid-area: p;
+
+    background-color: blue;
+    border: 1px solid black;
+}
+.p7{
+    margin: 0;
+    grid-area: p2;
+
+    background-color: red;
+    border: 2px solid black;
+    
+}
+
+.grid4{
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 1fr 10fr 1fr;
+
+    grid-template-areas: 
+    'p1 p2 p3' /* definindo as linhas e as colunas, de jeito mais simplificado */
+    'p1 p2 p3'
+    
+;
+      
+}
+.p8{
+    margin: 0;
+    grid-area: p1;
+
+    background-color: darkgreen;
+    border: 1px solid black;
+}
+.p9{
+    margin: 0;
+    grid-area: p2;
+
+    background-color: red;
+    border: 2px solid black;
+    
+}
+.p10{
+    margin: 0;
+    grid-area: p3;
+
+    background-color: yellow;
+    border: 2px solid black;
+    
+}
+
+.grid5{
+    display: grid;
+    grid-template-rows: 70px 160px;
+    grid-template-columns: 1fr 10fr;
+
+    grid-template-areas: 
+    
+    'p1 p1'
+    'p2 p3'
+;
+      
+}
+.p11{
+   
+    margin: 0;
+    grid-area: p1;
+
+    background-color: darkgreen;
+    border: 1px solid black;
+}
+.p12{
+    margin: 0;
+    grid-area: p2;
+  
+
+    background-color: red;
+    border: 2px solid black;
+    
+}
+.p13{
+    margin: 0;
+    grid-area: p3;
+    
+
+    background-color: yellow;
+    border: 2px solid black;
+    
+}
+.grid6{
+    display: grid;
+    grid-template-rows: 70px 160px;
+    grid-template-columns: 1fr 10fr 1fr;
+
+    grid-template-areas: 
+    
+    'p1 p1 p1'
+    'p2 p3 p4'
+;
+      
+}
+.p14{
+   
+    margin: 0;
+    grid-area: p1;
+
+    background-color: darkgreen;
+    border: 1px solid black;
+}
+.p15{
+    margin: 0;
+    grid-area: p2;
+    
+
+    background-color: red;
+    border: 2px solid black;
+    
+}
+.p16{
+    margin: 0;
+    grid-area: p3;
+   
+
+    background-color: yellow;
+    border: 2px solid black;
+    
+}
+.p17{
+    margin: 0;
+    grid-area: p4;
+    
+
+    background-color: deepskyblue;
+    border: 2px solid black;
+    
+}
+
+.grid7{
+    display: grid;
+    grid-template-rows: 70px 150px 30px;
+    grid-template-columns: 1fr 10fr;
+
+    grid-template-areas: 
+    
+    'p1 p1 p1'
+    'p2 p3 p3'
+    'p4 p4 p4'
+;
+      
+}
+.p18{
+   
+    margin: 0;
+    grid-area: p1;
+   
+
+    background-color: darkgreen;
+    border: 1px solid black;
+}
+.p19{
+    margin: 0;
+    grid-area: p2;
+    
+
+    background-color: red;
+    border: 2px solid black;
+    
+}
+.p20{
+    margin: 0;
+    grid-area: p3;
+   
+
+    background-color: yellow;
+    border: 2px solid black;
+    
+}
+.p21{
+    margin: 0;
+    grid-area: p4;
+ 
+
+    background-color: deepskyblue;
+    border: 2px solid black;
+    
+}
+
+.grid8{
+    display: grid;
+    grid-template-rows: 70px 150px 30px;
+    grid-template-columns: 1fr 10fr 1fr;
+
+    grid-template-areas: 
+    
+    'p1 p1 p1'
+    'p2 p3 p4'
+    'p5 p5 p5'
+;
+      
+}
+.p22{
+   
+    margin: 0;
+    grid-area: p1;
+   
+
+    background-color: darkgreen;
+    border: 1px solid black;
+}
+.p23{
+    margin: 0;
+    grid-area: p2;
+    
+
+    background-color: red;
+    border: 2px solid black;
+    
+}
+.p24{
+    margin: 0;
+    grid-area: p3;
+   
+
+    background-color: yellow;
+    border: 2px solid black;
+    
+}
+.p25{
+    margin: 0;
+    grid-area: p4;
+ 
+
+    background-color: deepskyblue;
+    border: 2px solid black;
+    
+}
+.p26{
+    margin: 0;
+    grid-area: p5;
+ 
+
+    background-color: crimson;
+    border: 2px solid black;
+    
+}
+
+
+
